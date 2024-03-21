@@ -124,3 +124,40 @@ console.log(`Valores tras move de programWindow (x, y) => (${programWindow.size.
 changeWindow(programWindow);
 console.log(`Valores tras changeWindow a programWindow {size} => (${programWindow.size.width}, ${programWindow.size.heigth})`);
 console.log(`Valores tras changeWindow a programWindow {position} => (${programWindow.position.x}, ${programWindow.position.y})`);
+
+//Caso de uso 1
+/* 
+console.log("=====PRUEBAS A SIZE=====");
+const size = new Size(1900, 890);
+console.log(`Valores iniciales de size anchura: ${size.width}`);
+console.log(`Valores iniciales de size altura: ${size.heigth}\n`);
+
+size.resize(1970,1960);
+console.log(`Valores tras redimensionamiento anchura: ${size.width}`);
+console.log(`Valores tras redimensionamiento altura: ${size.heigth}\n`);
+
+console.log("=====PRUEBAS A POSITION=====");
+const point = new Position();
+console.log(`Valores iniciales de position x: ${point.x}`);
+console.log(`Valores iniciales de position y: ${point.y}\n`);
+
+point.move(300,500);
+console.log(`Valores tras movimiento de position en x: ${point.x}`);
+console.log(`Valores tras movimiento de position en y: ${point.y}\n`);
+
+console.log("=====PRUEBAS A PROGRAMWINDOW=====");
+const programWindow = new ProgramWindow();
+console.log(`Valores iniciales de programWindow {screenSize} (${programWindow.screenSize.width}, ${programWindow.screenSize.heigth})\n`);
+
+const newSize = new Size(750,500);
+programWindow.resize(newSize);
+console.log(`Valores tras resize de programWindow (width, heigth) => (${programWindow.size.width}, ${programWindow.size.heigth})\n`);
+
+const newPosition = new Position(30,90);
+programWindow.move(newPosition);
+console.log(`Valores tras move de programWindow (x, y) => (${programWindow.size.width}, ${programWindow.size.heigth})\n`);
+
+changeWindow(programWindow);
+console.log(`Valores tras changeWindow a programWindow {size} => (${programWindow.size.width}, ${programWindow.size.heigth})`);
+console.log(`Valores tras changeWindow a programWindow {position} => (${programWindow.position.x}, ${programWindow.position.y})`);
+/*/   
